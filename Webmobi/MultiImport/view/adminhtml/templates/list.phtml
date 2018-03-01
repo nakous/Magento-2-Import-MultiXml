@@ -1,0 +1,23 @@
+<?php /** @var $block \Webmobi\MultiImport\Block\XmlList */ ?>
+<h1><?php echo __('Latest XML') ?></h1>
+<ul class="blog-post-list">
+<?php /** @var $post \Webmobi\MultiImport\Model\Mxml */ ?>
+<?php foreach ($block->getXmls() as $post): ?>
+    <li class="blog-post-list-item">
+        <h3 class="blog-post-item-title">
+            <a target="_block" href="<?php echo $post->getUrl() ?>"><?php echo $post->getName() ?></a>
+        </h3>
+
+        <div class="blog-post-item-content">
+            <?php echo $post->getStatus(); ?>
+        </div>
+
+        <div class="blog-post-item-meta">
+            <strong><?php echo __('Created at:') ?></strong> <?php echo $post->getCreatedAt() ?>
+        </div>
+		<div class="blog-post-item-action">
+             <a target="_block" href="/multiimport/Mxml/New/<?php echo $post->getId() ?>">ADD</a>
+        </div>
+    </li>
+<?php endforeach; ?>
+</ul>

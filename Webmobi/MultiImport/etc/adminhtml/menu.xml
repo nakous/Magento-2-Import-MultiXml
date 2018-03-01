@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Webmobi_MultiImport" title="Multiimport" module="Webmobi_MultiImport" sortOrder="20" dependsOnModule="Webmobi_MultiImport" resource="Webmobi_MultiImport::multiimport"/>
+        <add id="Webmobi_MultiImport::index" title="List XML" module="Webmobi_MultiImport" action="multiimport/ListXml/index" parent="Webmobi_MultiImport" sortOrder="20" dependsOnModule="Webmobi_MultiImport" resource="Webmobi_MultiImport::multiimport"/>
+        <add id="Webmobi_MultiImport::add" title="ADD XML" module="Webmobi_MultiImport" action="multiimport/Mxml/New" parent="Webmobi_MultiImport" sortOrder="21" dependsOnModule="Webmobi_MultiImport" resource="Webmobi_MultiImport::multiimport"/>
+    </menu>
+</config>
