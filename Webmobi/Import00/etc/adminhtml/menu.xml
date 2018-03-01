@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
-    <menu>
-        <add id="Webmobi_Import" parent="Magento_Backend::content" title="Import" module="Webmobi_Import" sortOrder="20" dependsOnModule="Webmobi_Import" resource="Webmobi_Import::import"/>
-        <add id="Webmobi_Import::index" title="List XML" module="Webmobi_Import" action="import/feed" parent="Webmobi_Import" sortOrder="20" dependsOnModule="Webmobi_Import" resource="Webmobi_Import::import"/>
-    </menu>
-</config>
